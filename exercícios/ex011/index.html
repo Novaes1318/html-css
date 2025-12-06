@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5.</p>
+    <audio src="midia/On The Flip - The Grey Room _ Density & Time.mp3"controls autoplay></audio>
+    <!--FORMATOS ACEITOS PELO HTML5 = MP3, WAV, OGG-->
+    <h2>Outro audio com tag diferente</h2>
+    <audio preload="auto" controls autoplay loop> 
+        <source src="midia/On The Flip - The Grey Room _ Density & Time.mp3" type="audio/mpeg">
+        <source src="midia/On The Flip - The Grey Room _ Density & Time.mp3" type="audio/wav">
+        <source src="midia/On The Flip - The Grey Room _ Density & Time.mp3" type="audio/ogg">
+
+    </audio>
+    <p><a href="midia/On The Flip - The Grey Room _ Density & Time.mp3">Clique aqui para baixar</a></p>
+</body>
+</html>
